@@ -6,6 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj Resume</title>
+
+
+    <!-- style -->
+    <style>
+        /* Example media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            /* CSS rules for smaller screens */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-hover tr:hover {
+            background-color: #b693934b;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .hover-link {
+            font-size: 16px;
+            transition: font-size 0.3s;
+        }
+
+        .hover-link:hover {
+            font-size: 25px;
+            background-color: aqua;
+        }
+
+        .skills-container {
+
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0 ;
+        }
+        li{
+           padding:  3px 3px 3px 3px;
+        }
+
+        .skills-list li:hover {
+            background-color: #b693934b;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,22 +79,26 @@
             <tr>
                 <td>
                     <a href="https://www.github.com/suraj-khot-19">
-                        <img style="float: left;" src="/the_suraj.png"
-                            alt="Suraj Khot Photo">
+                        <img style="float: left;" width="250" src="the_suraj.png" alt="Suraj Khot Photo">
                     </a>
                 </td>
                 <td>
                     <h1>Suraj Sanjay Khot</h1>
-                    <p><i>Founder of <a target="_blank" href="https://www.codingshuttle.com">Coding Shuttle</a> &
-                            Ex-Software Engineer at Amazon</i></p>
-                    <p>I ❤️ Web Development and Here to guide the Coding Enthusiasts 🚀</p>
-                    
+                    <p><i>
+                            <h4>
+                                look forward to a position in a professional organization to enhance my skills and
+                                knowledge. I believe in honesty and discipline, systematic hard work and a positive
+                                attitude.
+                            </h4>
+                        </i></p>
+
                     <nav>
                         <ul>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#internships">Internships</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contactme">Connect with Me</a></li>
+                            <li><a href="#education" class="hover-link">Education</a></li>
+                            <li><a href="#internships" class="hover-link">Internships</a></li>
+                            <li><a href="#skills" class="hover-link">skills</a></li>
+                            <li><a href="#projects" class="hover-link">Projects</a></li>
+                            <li><a href="#contactme" class="hover-link">Connect with Me</a></li>
                         </ul>
                     </nav>
 
@@ -47,7 +116,7 @@
 
         <section id="education">
             <h2>Education</h2>
-            <table border="">
+            <table border="3" class="table-hover">
                 <tr>
                     <th>Course</th>
                     <th>Institute</th>
@@ -57,19 +126,19 @@
                 <tr>
                     <td>BCA</td>
                     <td>KLE GI Bagewadi College, Nipani</td>
-                    <td>2023</td>
+                    <td>2020 - 2023</td>
                     <td>81.71%</td>
                 </tr>
                 <tr>
                     <td>12<sup>th</sup> Grade</td>
                     <td>DKTE, Ichalkaranji</td>
-                    <td>2020</td>
+                    <td>2018 - 2020</td>
                     <td>76%</td>
                 </tr>
                 <tr>
                     <td>10<sup>th</sup> Grade</td>
                     <td>NESR, Rendal</td>
-                    <td>2018</td>
+                    <td>2017 - 2018</td>
                     <td>91.60%</td>
                 </tr>
             </table>
@@ -78,19 +147,72 @@
         <section id="internships">
             <h2>Internships</h2>
             <article>
-                <p><strong>Better Butter</strong> an Indian Online Cooking Platform</p>
-                <p><i>Android Developer Intern</i></p>
                 <ul>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla autem itaque pariatur sed libero
-                        architecto obcaecati deleniti nobis suscipit. Laboriosam, optio magni. Temporibus non magnam quas id
-                        fugit corporis fugiat facilis libero in itaque asperiores, et, delectus illo a natus!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at eius nulla repellat, odio
-                        aliquam
-                        iure necessitatibus qui accusantium obcaecati.</li>
+                    <li>
+                        <p><strong>Zoblik</strong></p>
+                        <ul>
+                            <li>
+                                <p><i>Mobile Application Developer Intern</i></p>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </article>
+            <hr>
         </section>
 
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><h3>Programming Language</h3>
+                <div class="skills-container">
+                    <ul class="skills-list">
+                        <li>Java</li>
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>LARAVEL</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        
+                    </ul>
+                    <ul class="skills-list">
+
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>PHP</li>
+                        <li>PYTHON</li>
+                        <li>C</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                    <h3>Other Technical Skills</h3>
+                    <div class="skills-container">
+                    <ul class="skills-list">
+                        <li>MS-Word</li>
+                        <li>MS-Office</li>
+                    </ul>
+                    <ul class="skills-list">
+                        <li>Power Point</li>
+                        <li>MSExcel</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Operating System</h3>
+                    <div class="skills-container">
+                        <ul class="skills-list">
+                            <li>Windows</li>
+                        </ul>
+                        <ul class="skills-list">
+                            <li>Linux</li>
+                        </ul>
+                </li>
+            </ul>
+            <hr>
+        </section>
         <section id="projects">
             <h2>Projects</h2>
             <ul>
@@ -101,39 +223,19 @@
                         </a>
                         <ul>
                             <li>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolores, nisi nihil
-                                    est
-                                    quas
-                                    voluptas maxime esse unde illo perspiciatis cum omnis dolorum exercitationem
-                                    architecto
-                                    rerum, aliquid minus enim repudiandae.</p>
+                                <p></p>
                             </li>
                             <li>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium molestiae modi
-                                    voluptatem aspernatur dolorem eius voluptatum error a distinctio harum.</p>
+                                <p></p>
                             </li>
                         </ul>
                     </article>
                 </li>
-                <li>
-                    <article>
-                        <h3>Shuffler</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate assumenda fugit, quo
-                            natus
-                            veniam ad commodi deserunt repellat, fugiat voluptatem nostrum vel voluptate impedit
-                            explicabo
-                            laboriosam velit minima consectetur atque. Dolorum, quo nam omnis maxime eos accusantium
-                            perspiciatis quam?</p>
-                    </article>
-                </li>
+
             </ul>
             <hr>
         </section>
     </main>
-
-    <aside>
-
-    </aside>
 
     <!-- Main Section Ends -->
 
@@ -144,12 +246,6 @@
         <a href="tel:+919359658536">
             <p>+919359658536</p>
         </a>
-
-        <a href="aboutus.html">
-            <p>About Us</p>
-        </a>
-
-
-        <a href="#">Back To Top</a>
+        <a class="end" href="#">Back To Top</a>
 
     </footer>
