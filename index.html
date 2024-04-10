@@ -22,7 +22,78 @@
 
         }
 
-        table {
+        /* Header Styles */
+        header {
+            background-color: white;
+            padding: 10px;
+            height: 350px;
+        }
+
+        header a:hover {
+            background-color: #77afeb;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 170px;
+            float: left;
+            border: 5px solid white;
+            /* Example border */
+            border-radius: 3%;
+        }
+
+        .header-info h1 {
+            margin-top: 20;
+            font-weight: bold;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #333;
+        }
+
+        .navigation {
+            padding-left: 300px;
+            font-weight: bold;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        .hover-link {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .hover-link:hover {
+            color: #007bff;
+        }
+
+        .table-hover table {
             border-collapse: collapse;
         }
 
@@ -61,54 +132,72 @@
 
         .skills-list {
             list-style: none;
-            padding: 0 ;
+            padding: 0;
         }
-        li{
-           padding:  3px 3px 3px 3px;
+
+        li {
+            padding: 3px 3px 3px 3px;
         }
 
         .skills-list li:hover {
             background-color: #b693934b;
+        }
+
+        .end {
+            display: flex;
+            justify-content: center;
+            background-color: greenyellow;
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: left;
+            gap: 20px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <table>
-            <tr>
-                <td>
-                    <a href="https://www.github.com/suraj-khot-19">
-                        <img style="float: left;" width="250" src="the_suraj.png" alt="Suraj Khot Photo">
-                    </a>
-                </td>
-                <td>
-                    <h1>Suraj Sanjay Khot</h1>
-                    <p><i>
-                            <h4>
-                                look forward to a position in a professional organization to enhance my skills and
-                                knowledge. I believe in honesty and discipline, systematic hard work and a positive
-                                attitude.
-                            </h4>
-                        </i></p>
+        <div class="header-content">
+            <a href="https://www.github.com/suraj-khot-19">
+                <img class="profile-image" src="the_suraj.png" alt="Suraj Khot Photo">
+            </a>
+            <div class="header-info">
+                <h1>Suraj Sanjay Khot</h1>
+                <p><i>
+                        <h3>Look forward to a position in a professional organization to enhance my skills and
+                            knowledge. I
+                            believe in honesty and discipline, systematic hard work, and a positive attitude.</h3>
+                    </i></p>
+                <p>Email: <a href="mailto: khotsuraj019@gmail.com">khotsuraj019@gmail.com</a></p>
+                <p>LinkedIn : <a href="https://www.linkedin.com/in/khot-suraj">linkedin.com/in/khot-suraj</a></p>
+                <a href="tel:+919359658536">
+                    <p>+919359658536</p>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#education" class="hover-link">Education</a></li>
+                    <li><a href="#internships" class="hover-link">Internships</a></li>
+                    <li><a href="#skills" class="hover-link">Skills</a></li>
+                    <li><a href="#projects" class="hover-link">Projects</a></li>
+                    <li><a href="#Certificate" class="hover-link">Certification</a></li>
 
-                    <nav>
-                        <ul>
-                            <li><a href="#education" class="hover-link">Education</a></li>
-                            <li><a href="#internships" class="hover-link">Internships</a></li>
-                            <li><a href="#skills" class="hover-link">skills</a></li>
-                            <li><a href="#projects" class="hover-link">Projects</a></li>
-                            <li><a href="#contactme" class="hover-link">Connect with Me</a></li>
-                        </ul>
-                    </nav>
+                    <li><a href="#contactme" class="hover-link">Connect with Me</a></li>
+                </ul>
 
-                </td>
-            </tr>
-        </table>
+            </nav>
 
-
+        </div>
         <hr>
     </header>
+
 
     <!-- Header ends -->
 
@@ -164,41 +253,42 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li><h3>Programming Language</h3>
-                <div class="skills-container">
-                    <ul class="skills-list">
-                        <li>Java</li>
-                        <li>Flutter</li>
-                        <li>Dart</li>
-                        <li>LARAVEL</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        
-                    </ul>
-                    <ul class="skills-list">
+                <li>
+                    <h3>Programming Language</h3>
+                    <div class="skills-container">
+                        <ul class="skills-list">
+                            <li>Java</li>
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>LARAVEL</li>
+                            <li>SQL</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
 
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>PHP</li>
-                        <li>PYTHON</li>
-                        <li>C</li>
-                        <li>C#</li>
-                    </ul>
-                </div>
+                        </ul>
+                        <ul class="skills-list">
+
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>PHP</li>
+                            <li>PYTHON</li>
+                            <li>C</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <h3>Other Technical Skills</h3>
                     <div class="skills-container">
-                    <ul class="skills-list">
-                        <li>MS-Word</li>
-                        <li>MS-Office</li>
-                    </ul>
-                    <ul class="skills-list">
-                        <li>Power Point</li>
-                        <li>MSExcel</li>
-                    </ul>
+                        <ul class="skills-list">
+                            <li>MS-Word</li>
+                            <li>MS-Office</li>
+                        </ul>
+                        <ul class="skills-list">
+                            <li>Power Point</li>
+                            <li>MSExcel</li>
+                        </ul>
                 </li>
                 <li>
                     <h3>Operating System</h3>
@@ -218,16 +308,16 @@
             <ul>
                 <li>
                     <article>
-                        <a href="https://github.com/Anuj-Kumar-Sharma/EthereumVoting">
-                            <h3>Ethereum Voting</h3>
-                        </a>
+                        <h3>Car Rental System:
+                        </h3>
+
                         <ul>
                             <li>
-                                <p></p>
+                                <p>A web-based platform designed to
+                                    streamline the process of renting vehicles for
+                                    both customers and rental service providers</p>
                             </li>
-                            <li>
-                                <p></p>
-                            </li>
+
                         </ul>
                     </article>
                 </li>
@@ -237,15 +327,97 @@
         </section>
     </main>
 
+    <section id="Certificate">
+        <h2>Certification</h2>
+        <ul>
+            <li>
+                <article>
+                    <h3>VMware
+                    </h3>
+
+                    <ul>
+                        <li>Cloud and Virtualization</li>
+                        <li> Storage Concepts.
+                        </li>
+                    </ul>
+                    <h3>Cisco
+                    </h3>
+
+                    <ul>
+                        <li>Cyber Security Essential Course</li>
+
+                    </ul>
+                    <h3>Career Ninja
+                    </h3>
+
+                    <ul>
+                        <li>PHP</li>
+                        <li> LARAVEL.
+                        </li>
+                    </ul>
+                    <h3>Infosys Springboard
+                    </h3>
+
+                    <ul>
+                        <li>JAVA</li>
+                        <li> LARAVEL.
+                        </li>
+                    </ul>
+
+                    <h3>Great Learning
+                    </h3>
+
+                    <ul>
+                        <li>JAVA.</li>
+                        <li>Frontend
+                            Devlopment-HTML CSS.
+                        </li>
+                    </ul>
+                    <h3>Open Weaver
+                    </h3>
+
+                    <ul>
+                        <li>HTML.</li>
+                        <li>CSS.
+                        </li>
+                        <li>JAVA.</li>
+                        <li>JAVASCRIPT.
+                        </li>
+                        <li>PYTHON.</li>
+
+                    </ul>
+                    <h3>SoloLearn
+                    </h3>
+
+                    <ul>
+                        <li>JAVA.</li>
+                        <li>HTML .
+                        </li>
+                        <li>CSS.</li>
+                        <li>SQL.
+                        </li>
+                        <li>JAVASCRIPT.</li>
+                        <li>Web Development
+                        </li>
+                    </ul>
+
+                </article>
+            </li>
+
+        </ul>
+        <hr>
+    </section>
+    </main>
+
     <!-- Main Section Ends -->
 
     <footer id="contactme">
         <h2 id="contact">Connect With Me</h2>
         <p>Email: <a href="mailto: khotsuraj019@gmail.com">khotsuraj019@gmail.com</a></p>
-        <p>Github: github.com/suraj-khot-19</p>
+        <p>GitHub : <a href="https://github.com/suraj-khot-19/">github.com/suraj-khot-19</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/khot-suraj">linkedin.com/in/khot-suraj</a></p>
         <a href="tel:+919359658536">
             <p>+919359658536</p>
         </a>
         <a class="end" href="#">Back To Top</a>
-
     </footer>
