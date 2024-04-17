@@ -17,7 +17,12 @@ header {
 header a:hover {
     background-color: #77afeb;
 }
-
+.header_content {
+    padding:2px 2px;
+}
+.header_info{
+    padding:2px 2px;
+}
 .profile-image {
     width: 170px;
     float: left;
