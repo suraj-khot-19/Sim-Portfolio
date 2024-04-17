@@ -22,6 +22,7 @@ header a:hover {
 
 .navigation {
     font-weight: bold;
+    padding: 1rem 1rem;
 }
 
 .navigation ul {
@@ -92,11 +93,11 @@ a {
 
     display: flex;
     justify-content: left;
-    gap: 20px;
+    gap: 3rem;
 }
 
 .skills-list {
-    list-style: none;
+    
     padding: 0;
 }
 
@@ -140,4 +141,35 @@ button:hover {
 
 button:active {
     background-color: blue;
+}
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid black;
+    width: 100%;
+}
+/* Pop-up style */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+}
+
+.certify :hover {
+    color: #007bff;
+    font-weight: bold;
+    font-family: cursive;
+}
+ .vv:hover {
+    color: #007bff;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
