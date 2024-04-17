@@ -17,10 +17,10 @@ header {
 header a:hover {
     background-color: #77afeb;
 }
-.header_content {
+.header-content {
     padding:2px 2px;
 }
-.header_info{
+.header-info{
     padding:2px 2px;
 }
 .profile-image {
