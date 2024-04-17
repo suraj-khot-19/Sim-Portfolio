@@ -151,16 +151,15 @@ hr {
     margin: 0;
     border: 0;
     border-top: 1px solid black;
-    width: 100%;
+    width: 200%;
 }
 /* Pop-up style */
 .popup {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    right:50%;
+    bottom:50%;
     color: darkblue;
     font-weight: bolder;
     transform: translate(-50%, -50%);
