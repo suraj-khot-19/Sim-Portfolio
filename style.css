@@ -67,11 +67,11 @@ nav ul li {
 
 .table-hover table {
     border-collapse: collapse;
+    padding: 5px 8px;
 }
 
-.table-hover th,
+th,
 td {
-    padding: 4px 4px 4px 4px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
