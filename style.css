@@ -29,7 +29,13 @@ header a:hover {
     margin: 0;
     padding: 0;
 }
-
+/* table */
+.max table {
+    border-collapse: collapse;
+}
+.max td {
+    border: none;
+}
 
 /* Navigation Styles */
 nav ul {
