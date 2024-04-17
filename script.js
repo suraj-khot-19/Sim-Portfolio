@@ -1,8 +1,21 @@
-document.querySelector('.download-button').addEventListener('click', function () {
+document.getElementById('downloadButton').addEventListener('click', function() {
+    var downloadButton = this;
+    var popup = document.querySelector('.popup');
+    
 
-    document.getElementById('popup').style.display = 'block';
+    var buttonRect = downloadButton.getBoundingClientRect();
+    var buttonX = buttonRect.left;
+    var buttonY = buttonRect.top;
+    
+    
+    popup.style.left = buttonX + 'px';
+    popup.style.top = buttonY + 'px';
+    
+    
+    popup.style.display = 'block';
+});
 
     setTimeout(function () {
         document.getElementById('popup').style.display = 'none';
     }, 10000);
-});
+}
