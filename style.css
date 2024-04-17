@@ -18,10 +18,10 @@ header a:hover {
     background-color: #77afeb;
 }
 .header-content {
-    padding:2px 2px;
+    padding:2px 2px 2px 2px ;
 }
 .header-info{
-    padding:2px 2px;
+    padding:2px 2px 2px 2px;
 }
 .profile-image {
     width: 170px;
