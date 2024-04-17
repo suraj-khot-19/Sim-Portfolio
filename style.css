@@ -70,19 +70,43 @@ nav ul li {
     color: #007bff;
 }
 
-.table-hover table {
-    border-collapse: collapse;
-    padding: 5px 8px;
+ 
+/* Style for the education table */
+.table-hover {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th,
-td {
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+/* Style for table headers */
+.table-hover th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
 }
 
-.table-hover tr:hover {
-    background-color: #b693934b;
+/* Style for table data */
+.table-hover td {
+  padding: 10px;
+}
+
+/* Style for alternating row colors */
+.table-hover tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style for superscript in course names */
+.table-hover td sup {
+  font-size: 80%;
+}
+
+/* Style for result cells */
+.table-hover td:last-child {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.empty-space {
+  height: 20px; /* Adjust the height as needed */
 }
 
 a {
