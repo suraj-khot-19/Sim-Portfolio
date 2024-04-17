@@ -10,11 +10,6 @@
 
     <!-- style -->
     <style>
-        /* Example media query for smaller screens */
-        @media only screen and (max-width: 768px) {
-            /* CSS rules for smaller screens */
-        }
-
         body {
             margin: 0;
             padding: 0;
@@ -26,7 +21,6 @@
         header {
             background-color: white;
             padding: 10px;
-            height: 350px;
         }
 
         header a:hover {
@@ -36,7 +30,7 @@
         .header-content {
             display: flex;
             align-items: center;
-            gap: 20px;
+            /* gap: 20px; */
         }
 
         .profile-image {
@@ -56,7 +50,7 @@
         }
 
         .navigation {
-            padding-left: 300px;
+            /* padding-left: 300px; */
             font-weight: bold;
         }
 
@@ -119,7 +113,7 @@
         }
 
         .hover-link:hover {
-            font-size: 25px;
+            font-size: 20px;
             background-color: aqua;
         }
 
@@ -162,22 +156,25 @@
 <body>
     <header>
         <div class="header-content">
-            <a href="https://www.github.com/suraj-khot-19">
-                <img class="profile-image" src="the_suraj.png" alt="Suraj Khot Photo">
-            </a>
-            <div class="header-info">
-                <h1>Suraj Sanjay Khot</h1>
-                <p><i>
-                        <h3>Look forward to a position in a professional organization to enhance my skills and
-                            knowledge. I
-                            believe in honesty and discipline, systematic hard work, and a positive attitude.</h3>
-                    </i></p>
-                <p>Email: <a href="mailto: khotsuraj019@gmail.com">khotsuraj019@gmail.com</a></p>
-                <p>LinkedIn : <a href="https://www.linkedin.com/in/khot-suraj">linkedin.com/in/khot-suraj</a></p>
-                <a href="tel:+919359658536">
-                    <p>+919359658536</p>
-                </a>
-            </div>
+            <table>
+                <td>
+                    <a href="https://www.github.com/suraj-khot-19">
+                        <img class="profile-image" src="the_suraj.png" alt="Suraj Khot Photo">
+                    </a>
+                </td>
+
+                <div class="header-info">
+                    <td>
+                        <h1>Suraj Sanjay Khot</h1>
+                        <p><i>
+                                <h3>Look forward to a position in a professional organization to enhance my skills and
+                                    knowledge. I
+                                    believe in honesty and discipline, systematic hard work, and a positive attitude.
+                                </h3>
+                            </i></p>
+                    </td>
+            </table>
+        </div>
         </div>
         <hr>
         <div class="navigation">
@@ -188,8 +185,8 @@
                     <li><a href="#skills" class="hover-link">Skills</a></li>
                     <li><a href="#projects" class="hover-link">Projects</a></li>
                     <li><a href="#Certificate" class="hover-link">Certification</a></li>
-
                     <li><a href="#contactme" class="hover-link">Connect with Me</a></li>
+                    <li><a href="#cv" class="hover-link">Download CV</a></li>
                 </ul>
 
             </nav>
@@ -407,6 +404,12 @@
         </ul>
         <hr>
     </section>
+
+    <section id="education">
+        <a href="cv.pdf" download="cv.pdf">
+            <button>Download CV</button>
+        </a>
+        </section>
     </main>
 
     <!-- Main Section Ends -->
