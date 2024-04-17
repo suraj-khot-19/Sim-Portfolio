@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+}
+
+header a:hover {
+    background-color: #77afeb;
+}
+
+.profile-image {
+    width: 170px;
+    float: left;
+    border: 5px snow grey;
+    border-radius: 3%;
+}
+
+.navigation {
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+.hover-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #007bff;
+}
+
+.table-hover table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-hover tr:hover {
+    background-color: #b693934b;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hover-link {
+    transition: font-size 0.3s;
+}
+
+.hover-link:hover {
+    color: aqua;
+    background-color: white;
+}
+
+.skills-container {
+
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 3px 3px 3px 3px;
+}
+
+.skills-list li:hover {
+    background-color: #b693934b;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+/* button */
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+button:active {
+    background-color: blue;
+}

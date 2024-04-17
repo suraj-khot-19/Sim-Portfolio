@@ -6,152 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj Resume</title>
-
-
-    <!-- style -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-
-        /* Header Styles */
-        header {
-            background-color: white;
-
-
-        }
-
-        header a:hover {
-            background-color: #77afeb;
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            /* gap: 20px; */
-        }
-
-        .profile-image {
-            width: 170px;
-            float: left;
-            border: 5px solid white;
-            /* Example border */
-            border-radius: 3%;
-        }
-
-        .header-info h1 {
-            margin-top: 20;
-            font-weight: bold;
-            font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            color: #333;
-        }
-
-        .navigation {
-            /* padding-left: 300px; */
-            font-weight: bold;
-        }
-
-        .navigation ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-
-        /* Navigation Styles */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-
-        .hover-link {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .hover-link:hover {
-            color: #007bff;
-        }
-
-        .table-hover table {
-            border-collapse: collapse;
-        }
-
-        .table-hover th,
-        td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .table-hover tr:hover {
-            background-color: #b693934b;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .hover-link {
-            font-size: 16px;
-            transition: font-size 0.3s;
-        }
-
-        .hover-link:hover {
-            font-size: 20px;
-            background-color: aqua;
-        }
-
-        .skills-container {
-
-            display: flex;
-            justify-content: left;
-            gap: 20px;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            padding: 3px 3px 3px 3px;
-        }
-
-        .skills-list li:hover {
-            background-color: #b693934b;
-        }
-
-        .end {
-            display: flex;
-            justify-content: center;
-            background-color: greenyellow;
-            font-size: larger;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .navigation {
-            display: flex;
-            justify-content: left;
-            gap: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -409,10 +264,16 @@
     </section>
 
     <section id="education">
-        <a href="cv.pdf" download="cv.pdf">
-            <button>Download CV</button>
-        </a>
+        <h1>Download My CV</h1>
+        <ul>
+            <li>
+                <a href="cv.pdf" download="cv.pdf">
+                    <button>Download CV</button>
+                </a>
+            </li>
+        </ul>
     </section>
+    <hr>
     </main>
 
     <!-- Main Section Ends -->
